@@ -131,6 +131,7 @@ public class TwitterSource extends AbstractSource
     twitterStream.setOAuthAccessToken(token);
     
     // Set up a filter to pull out industry-relevant tweets
+    //This control loop is bugged(it seems impossible for a split to result in a 0 length array) I'm forcing stream
     if (true) {
       logger.debug("Starting up Twitter sampling...");
       twitterStream.sample();
