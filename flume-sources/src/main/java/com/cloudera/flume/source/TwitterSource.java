@@ -131,7 +131,7 @@ public class TwitterSource extends AbstractSource
     twitterStream.setOAuthAccessToken(token);
     
     // Set up a filter to pull out industry-relevant tweets
-    if (keywords.length == 0) {
+    if (true) {
       logger.debug("Starting up Twitter sampling...");
       twitterStream.sample();
     } else {
